@@ -1,5 +1,8 @@
-# C# CLI Note Taker
-This is a simple note taking application coded in C#.
+# C# CLI Note Manager
+A cli note-taking application written in C#. Designed for speed and simplicity.
+
+### Design motivation
+The architecture is being designed to allow easy and flexible additions of new functionality and commands as well.
 
 ### Vision:
 Options prompt:
