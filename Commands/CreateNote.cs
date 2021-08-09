@@ -11,7 +11,16 @@ namespace Commands {
     [Command("cr")]
     public void Create(string[] command, NoteStorage store)
     {
-      var message = Querying.Prompt("Enter message. CTRL + S to save. CTRL + D to discard");
+      var message = "";
+      if(command.Length > 1)
+      {
+        message = command[1].Trim();
+      }
+      else
+      {
+        message = Querying.Prompt("Enter message. CTRL + S to save. CTRL + D to discard");
+      }
+      
       var note = new Note(message);
       store.Add(note);
 
