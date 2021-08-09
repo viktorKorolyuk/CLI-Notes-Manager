@@ -15,7 +15,7 @@ namespace Commands
     /// <param name="command"></param>
     /// <param name="store"></param>
     [Command("list")]
-    public void ListAllNotes(string command, NoteStorage store)
+    public void ListAllNotes(string[] command, NoteStorage store)
     {
       var notes = store.GetNotes();
       for (int i = 0; i < notes.Count; i++)
